@@ -109,7 +109,7 @@ header{
 }
 .player{
     display: flex; 
-    align-items: center;
+    align-items:center;
 }
 .player h3{
    margin-left: 0.313rem;
