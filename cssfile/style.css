@@ -39,6 +39,7 @@ header{
 .flex-item{
     display: flex;
     justify-content: space-between;
+    height: 5.875rem;
 }
 .logo{
     display: flex;
@@ -69,9 +70,7 @@ header{
     display: flex;
     list-style-type: none;
 }
-.nav-bar ul li{
-   
-}
+
 .nav-bar ul li a{
     text-decoration: none;
     color: #fff;
@@ -123,4 +122,50 @@ hr{
     display: flex;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                blog-section                                */
+/* -------------------------------------------------------------------------- */
+
+.blog-section{
+    margin-left: 1.875rem;
+    margin-right: 3.438rem;
+}
+.blog-section span{
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    margin-left: 0rem;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1.625rem;
+    grid-column-gap: 4.938rem;
+}
+.blog{
+    display: flex;
+
+}
+.blog img{
+    width: 7.313rem;
+    height: 7.313rem;
+}
+.article-text{
+    margin-left: 1rem;
+}
+.article-text h3{
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+}
+.article-text p > a{
+    color: var(--header-bg-color);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.article-text p{
+    color: gray;
+    font-size: 1rem;
+    font-weight: 600;
 }
