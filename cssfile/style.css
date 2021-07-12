@@ -310,6 +310,49 @@ footer p span{
 /*                                    media                                   */
 /* -------------------------------------------------------------------------- */
 
+
+@media only screen and (min-width: 689px) and (max-width: 968px) {
+
+   .wrapper{
+       width: 100%;
+   }
+
+   .flex-item{
+    justify-content: space-around;
+   }
+   .top-section{
+       height: 75.5rem;
+   }
+   .blogs{
+       grid-template-columns: repeat(1,1fr);
+   }
+   .blog-section{
+       margin-left: 0;
+   }
+   .blog-section span{
+    margin-left: 1.875rem;
+   }
+   hr{
+    width: 42.438rem;
+   }
+   .course{
+    height: 19.862rem;
+   }
+   .blog{
+       text-align: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   .course-section{
+    height: 25.625rem;
+   }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                mobile-device                               */
+/* -------------------------------------------------------------------------- */
+
+
 @media only screen and (max-width:688px) {
     .wrapper{
         max-width: 100%;
@@ -322,6 +365,8 @@ footer p span{
         display: none;
     }
 
+
+    
     .mobile-menu{
         margin-left: 170px;
     }
@@ -395,38 +440,3 @@ footer p span{
     }
 
     }
-
-
-@media only screen and (min-width: 689px) and (max-width: 968px) {
-
-   .wrapper{
-       width: 100%;
-   }
-
-   .flex-item{
-    justify-content: space-around;
-   }
-   .top-section{
-       height: 75.5rem;
-   }
-   .blogs{
-       grid-template-columns: repeat(1,1fr);
-   }
-   .blog-section{
-       margin-left: 0;
-   }
-   .blog-section span{
-    margin-left: 1.875rem;
-   }
-   hr{
-    width: 42.438rem;
-   }
-   .blog{
-       text-align: center;
-       align-items: center;
-       flex-direction: column;
-   }
-   .course-section{
-    height: 25.625rem;
-   }
-}
