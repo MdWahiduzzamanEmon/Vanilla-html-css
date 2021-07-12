@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font-size: 100%;
     scroll-behavior: smooth;
@@ -192,19 +193,21 @@ hr{
     font-size: 1.5rem;
 }
 .courses{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 1.875rem;
+    
 }
 .course{
-    margin-right: 1.571rem;
+   
     height: 16.862rem;
     width: 15.776rem;
     box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 0.313rem;
+    margin-right: 1.25rem;
 }
-.course:nth-child(3){
-    margin-right: 0;
-}
+
 .course h3{
     font-size: 1.252rem;
     margin-top: 1rem;
@@ -255,4 +258,77 @@ hr{
 span.reating-pint-color {
     color: #AEAEAE;
     font-size: 0.918rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               footer section                               */
+/* -------------------------------------------------------------------------- */
+
+footer{
+    text-align: center;
+    background-color:var(--header-bg-color);
+    height: 9.375rem;
+    margin-top: 1.25rem;
+}
+footer h1.cng-clr{
+    color: #fff;
+    padding: 1.875rem;
+}
+footer p{
+    font-weight: 600;
+}
+footer p span{
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    media                                   */
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (max-width:688px) {
+    .wrapper{
+        max-width: 100%;
+    }
+    header{
+        display: none;
+    }
+
+    .players{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 0.938rem;
+        grid-column-gap: 0.313rem;
+    }
+    hr{
+        width: 20.438rem;
+    }
+
+    .blog-section{
+        margin-right: 0;
+    }
+    .top-section{
+        height: 64.5rem;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .courses{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .course{
+        margin-top: 0.938rem;
+    }
+    .course img{
+        width: 100%;
+    }
+    .course-section{
+        height: 60.625rem;
+}
+    footer{
+        height: 10.375rem;
+    }
+
+    }
 }
