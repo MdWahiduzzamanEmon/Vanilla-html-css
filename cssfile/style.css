@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------------------- */
+/*                                 common css start                                */
+/* -------------------------------------------------------------------------- */
+:root{
+    --header-bg-color:#562EFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#E5E5E5;
+}
+
+.wrapper{
+    max-width: 54.375rem;
+    margin: 0 auto;
+    
+    
+}
+
+/* ----------------------------- common css end ----------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 header part                                */
+/* -------------------------------------------------------------------------- */
+header{
+    background-color: var(--header-bg-color);
+    height: 5.875rem;
+    position: sticky;
+    top: 0;
+    z-index: 222;
+}
+.flex-item{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    
+}
+.logo-img img{
+    width: 2.526rem;
+    height: 3.188rem;
+    color: #fff;
+    margin-top: 1.875rem;
+    margin-bottom: 1.438rem;
+}
+.logo-text{
+    color: #fff;
+    margin-top: 2.188rem;
+    margin-left: 0.988rem;
+    font-size: 1.5rem;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
+.nav-bar img{
+    width: 51px;
+    height: 51px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-bar ul li{
+   
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 2.25rem;
+}
