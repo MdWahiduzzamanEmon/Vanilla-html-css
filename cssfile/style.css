@@ -169,3 +169,90 @@ hr{
     font-size: 1rem;
     font-weight: 600;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                               course-section                               */
+/* -------------------------------------------------------------------------- */
+
+.course-section{
+    background-color: var(--main-content-bgcolor);
+    margin-top: 1.131rem;
+    border-radius: 0.313rem;
+    height: 22.625rem;
+    
+    
+}
+.course-section span{
+    color: var(--header-bg-color);
+    display: inline-block;
+    margin-top: 1.438rem;
+    margin-left: 1.875rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 1.875rem;
+}
+.course{
+    margin-right: 1.571rem;
+    height: 16.862rem;
+    width: 15.776rem;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+}
+.course:nth-child(3){
+    margin-right: 0;
+}
+.course h3{
+    font-size: 1.252rem;
+    margin-top: 1rem;
+    margin-bottom:0.448rem;
+}
+.course p{
+    font-size: 0.918rem;
+    color: #ED6B4F;
+    margin-bottom: 0.869rem;
+}
+.course img{
+    width: 14rem;
+    height: 6.5rem;
+}
+.rating-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star span{
+    font-size: 0.75rem;
+    margin: 0;
+}
+.fill{
+    color: #FFC014;
+    
+}
+.non-fill{
+    color: #AEAEAE;
+}
+.time{
+    width: 5.927rem;
+    height: 1.836rem;
+    border-radius: 0.918rem;
+    background: #FFE4E8;
+}
+.time span {
+    color: #FF4A60;
+    font-weight: 600;
+    font-size: 0.918rem;
+    margin-top: 0.313rem;
+    margin-bottom: 0;
+    margin-left: 0.438rem;
+}
+.time span .fa-clock{
+    margin-right: 0.339rem;
+}
+span.reating-pint-color {
+    color: #AEAEAE;
+    font-size: 0.918rem;
+}
