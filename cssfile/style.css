@@ -3,6 +3,7 @@
 /* -------------------------------------------------------------------------- */
 :root{
     --header-bg-color:#562EFF;
+    --main-content-bgcolor:#fff;
 }
 *{
     margin: 0;
@@ -19,10 +20,8 @@ body{
 }
 
 .wrapper{
-    max-width: 54.375rem;
+    max-width: 54.375rem; 
     margin: 0 auto;
-    
-    
 }
 
 /* ----------------------------- common css end ----------------------------- */
@@ -77,4 +76,51 @@ header{
     text-decoration: none;
     color: #fff;
     padding: 0 2.25rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               content section                              */
+/* -------------------------------------------------------------------------- */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 1.875rem;
+    grid-row-gap: 1.875rem;
+}
+.player img{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.313rem;
+}
+ .top-section span{
+    color: var(--header-bg-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 1.875rem;
+    margin-top: 2.063rem;
+    margin-bottom:2.5rem;
+}
+
+.top-section{
+    background-color: var(--main-content-bgcolor);
+    height: 42.5rem;
+    margin-top: 2.375rem;
+    border-radius: 0.313rem;
+}
+.player{
+    display: flex; 
+    align-items: center;
+}
+.player h3{
+   margin-left: 0.313rem;
+   font-size: 1.125rem;
+}
+hr{
+    margin-top: 1.875rem;
+    border: 1px solid #D1D1D1;
+    width: 50.438rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
