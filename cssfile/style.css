@@ -40,6 +40,7 @@ header{
 .flex-item{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 5.875rem;
 }
 .logo{
@@ -261,6 +262,28 @@ span.reating-pint-color {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                                 mobile menu                                */
+/* -------------------------------------------------------------------------- */
+
+.mobile-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label #btn,
+label #cancel{
+    font-size: 25px;
+    color: #fff;
+    
+    
+    display: none;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+/* -------------------------------------------------------------------------- */
 /*                               footer section                               */
 /* -------------------------------------------------------------------------- */
 
@@ -291,9 +314,50 @@ footer p span{
     .wrapper{
         max-width: 100%;
     }
-    header{
+    .logo{
+        margin-left: 10px;
+    }
+
+    .nav-bar img{
         display: none;
     }
+
+    .mobile-menu{
+        margin-left: 170px;
+    }
+    label #btn{
+        display: block;
+    }
+    label #cancel{
+        display: none;
+    }
+     .nav-bar ul{
+        flex-direction: column;
+        position: fixed;
+        line-height: 5.5;
+        top: 92px;
+        left: -100%;
+        width: 100%;
+        height: 38vh;
+        background-color: var(--header-bg-color);
+        text-align: center;
+        transition: .7s all;
+}
+     
+    
+     #check:checked ~ .nav-bar ul{
+        left: 0px;
+  }
+   input[type="checkbox"]:checked ~ label #btn{
+    display: none;
+   }
+   input[type="checkbox"]:checked ~ label #cancel{
+     display: block;
+   }
+
+
+
+
 
     .players{
         grid-template-columns: repeat(2,1fr);
@@ -331,4 +395,38 @@ footer p span{
     }
 
     }
+
+
+@media only screen and (min-width: 689px) and (max-width: 968px) {
+
+   .wrapper{
+       width: 100%;
+   }
+
+   .flex-item{
+    justify-content: space-around;
+   }
+   .top-section{
+       height: 75.5rem;
+   }
+   .blogs{
+       grid-template-columns: repeat(1,1fr);
+   }
+   .blog-section{
+       margin-left: 0;
+   }
+   .blog-section span{
+    margin-left: 1.875rem;
+   }
+   hr{
+    width: 42.438rem;
+   }
+   .blog{
+       text-align: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   .course-section{
+    height: 25.625rem;
+   }
 }
